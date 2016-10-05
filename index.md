@@ -151,14 +151,14 @@ Al ejecutar
 
 Aparece repetido 8 veces esta sentencia
 
-![egrep '^flags.*(vmx|svm)' /proc/cpuinfo](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura1_zpsvek4hpvu.png)
-
+![egr](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura1_zpsvek4hpvu.png)
 
 
 #### Ejercicio 5:
 
 
 ##### Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
 ![kvm-ok](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura_zpskjre6xpq.png)
 
 ##### Instalar un hipervisor para gestionar máquinas virtuales, que más adelante se podrá usar en pruebas y ejercicios.
