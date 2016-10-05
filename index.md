@@ -147,7 +147,11 @@ Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz
 
 Al ejecutar
 
-> egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+```
+
+egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+
+```
 
 Aparece repetido 8 veces esta sentencia
 
