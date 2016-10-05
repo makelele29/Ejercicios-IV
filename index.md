@@ -13,10 +13,10 @@ layout: index
 
 
 [HP ProLiant ML110 G9 E5 v4/8GB](https://www.pccomponentes.com/hp-proliant-ml110-g9-e5-v4-8gb)
- 
+
 ![HP ProLiant ML110 G9 E5 v4/8GB](https://thumb.pccomponentes.com/w-85-85/articles/10/102676/hp-proliant-ml110-g9-e5-v4-8gb-1.jpg)
 
-** Precio: ** 999 € 
+** Precio: ** 999 €
 
 
 - ** Amortización a los 4 años **:  Si consideramos que cada año tiene una amortización máxima (un 25%) el servidor nos costaria 999 * 0.25 = 249.75 € cada año.
@@ -145,7 +145,8 @@ Para saber el tipo de procesador que usamos, en mi caso es:
 
 Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz
 
-Al ejecutar 
+Al ejecutar
+
 > egrep '^flags.*(vmx|svm)' /proc/cpuinfo
 
 Aparece repetido 8 veces esta sentencia
@@ -155,6 +156,7 @@ Aparece repetido 8 veces esta sentencia
 
 
 #### Ejercicio 5:
+
 
 ##### Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 ![kvm-ok](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura_zpskjre6xpq.png)
