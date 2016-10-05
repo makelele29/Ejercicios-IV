@@ -150,10 +150,15 @@ Al ejecutar
 
 Aparece repetido 8 veces esta sentencia
 
-```
+![egrep '^flags.*(vmx|svm)' /proc/cpuinfo](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura1_zpsvek4hpvu.png)
 
-fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid flags 
 
-```
 
-Por tanto, mi equipo dispone de capacidades de virtualización.
+#### Ejercicio 5:
+
+##### Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+![kvm-ok](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura_zpskjre6xpq.png)
+
+##### Instalar un hipervisor para gestionar máquinas virtuales, que más adelante se podrá usar en pruebas y ejercicios.
+
+Tengo instalado virtualbox y vagrant 
