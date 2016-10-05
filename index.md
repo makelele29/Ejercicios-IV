@@ -6,7 +6,8 @@ layout: index
 # Tema 1
 
 
-#### Ejercicio  1: 
+#### Ejercicio  1:
+
 ##### Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.
 
 
@@ -76,6 +77,7 @@ _ _ _
 ##### Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
 He creado un programa para ver si en una cadena de llaves estan todas bien cerradas.
+
 ```
 
 #!/usr/bin/env python
@@ -108,6 +110,7 @@ print cadena
 print comprobarllaves(cadena)
 
 ```
+
 Instalamos cde
 
 > sudo apt-get install cde
@@ -146,8 +149,11 @@ Al ejecutar
 > egrep '^flags.*(vmx|svm)' /proc/cpuinfo
 
 Aparece repetido 8 veces esta sentencia
+
 ```
+
 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid flags 
+
 ```
 
 Por tanto, mi equipo dispone de capacidades de virtualización.
