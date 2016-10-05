@@ -1,7 +1,3 @@
----
-layout: index
----
-
 
 # Tema 1
 
@@ -16,11 +12,11 @@ layout: index
 
 ![HP ProLiant ML110 G9 E5 v4/8GB](https://thumb.pccomponentes.com/w-85-85/articles/10/102676/hp-proliant-ml110-g9-e5-v4-8gb-1.jpg)
 
-** Precio: ** 999 €
+** Precio:** 999 €
 
 
-- ** Amortización a los 4 años **:  Si consideramos que cada año tiene una amortización máxima (un 25%) el servidor nos costaria 999 * 0.25 = 249.75 € cada año.
--  ** Amortización a los 7 años **: Si consideramos que el servidor se amortiza más los primeros años y menos los últimos años, por cada año tendriamos:
+- ** Amortización a los 4 años**:  Si consideramos que cada año tiene una amortización máxima (un 25%) el servidor nos costaria 999 * 0.25 = 249.75 € cada año.
+-  ** Amortización a los 7 años**: Si consideramos que el servidor se amortiza más los primeros años y menos los últimos años, por cada año tendriamos:
  -  Primer año :  999 * 0.25 = 249,75
  -  Segundo año : 999 * 0.25 = 249,75
  -  Tercer año :  999 * 0.15 = 149,85
