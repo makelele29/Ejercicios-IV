@@ -37,8 +37,13 @@ Para ver las versiones instaladas en el ordenador utilizamos NVM ls:
 - Listar calificaciones para cada empresa
 - Crear calificación y añadirla (comprobando que la persona no la haya añadido ya)
 - Borrar calificación (si se arrepiente o te denuncia la empresa o algo)
-- Hacer un ránking de empresas por calificación, por ejemplo
+- Hacer un ránking de empresas por calificación
 - Crear un repositorio en GitHub para la librería y crear un pequeño programa que use algunas de sus funcionalidades.
+
+Para este ejercicios he utilizado express, jade y MySQL para la realización de la web.
+He creado un repositorio y he añadido un script para la instalación y funcionamiento de la web en cualquier sistema Ubuntu.
+
+[Repositorio del ejercicio 2](https://github.com/makelele29/Ranking-Empresas)
 
 #### Ejercicio 3
 ##### Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas ellas?
