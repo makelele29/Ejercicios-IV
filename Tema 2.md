@@ -31,7 +31,7 @@ Para ver las versiones instaladas en el ordenador utilizamos NVM ls:
 
 
 ##### Ejercicio 2
-###### Como ejercicio, algo ligeramente diferente: una web para calificar las empresas en las que hacen prácticas los alumnos. Las acciones serían
+##### Como ejercicio, algo ligeramente diferente: una web para calificar las empresas en las que hacen prácticas los alumnos. Las acciones serían
 
 - Crear empresa
 - Listar calificaciones para cada empresa
