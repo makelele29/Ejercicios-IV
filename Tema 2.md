@@ -47,10 +47,31 @@ He creado un repositorio y he añadido un script para la instalación y funciona
 
 #### Ejercicio 3
 ##### Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas ellas?
+Funciona en todas ellas a la perfección.
 
+![prueba de que va bien](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-10-22%2017-15-24_zpskdqq2onq.png?t=1477063318)
 
 #### Ejercicio 4
 ##### Crear una descripción del módulo usando package.json. En caso de que se trate de otro lenguaje, usar el método correspondiente.
+
+    {
+      "name": "application-name",
+      "version": "0.0.1",
+      "private": true,
+      "scripts": {
+        "start": "nodejs ./bin/www"
+      },
+      "dependencies": {
+        "express": "~4.0.0",
+        "static-favicon": "~1.0.0",
+        "morgan": "~1.0.0",
+        "cookie-parser": "~1.0.1",
+        "body-parser": "~1.0.0",
+        "debug": "~0.7.4",
+        "jade": "~1.3.0",
+        "mysql": "~2.9.0"
+      }
+    }
 
 #### Ejercicio 5
 ##### Automatizar con grunt y docco (o algún otro sistema) la generación de documentación de la librería que se cree. Previamente, por supuesto, habrá que documentar tal librería.
