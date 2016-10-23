@@ -111,11 +111,55 @@ Tendremos una carpeta __docs/__ con toda la documentación.
 
 #### Ejercicio 6
 ##### Para la aplicación que se está haciendo, escribir una serie de aserciones y probar que efectivamente no fallan. Añadir tests para una nueva funcionalidad, probar que falla y escribir el código para que no lo haga (vamos, lo que viene siendo TDD).
+    app.post('/iniciar',function(req, res){
+        var bd=BD();
+        bd.query("SELECT DNI,nombre FROM USUARIOS WHERE DNI="+req.body.dni+" AND clave="+req.body.clave,function(error,resultado,fila){
+          assert.ok(!error,"Error en el select de usuarios");
+          assert.notEqual(resultado.length,0,"No hay ningun resultado");
+          session.dni=resultado[0].DNI;
+          session.nombre=resultado[0].nombre;
+          res.redirect(session.pagina);
+        });
+
+});
 
 
 #### Ejercicio 7
 ##### IConvertir los tests unitarios anteriores con assert a programas de test y ejecutarlos desde mocha, usando descripciones del test y del grupo de test de forma correcta. Si hasta ahora no has subido el código que has venido realizando a GitHub, es el momento de hacerlo, porque lo vas a necesitar un poco más adelante.
 
+    var assert = require('assert');
+    var mysql = require('mysql');
+    //Funcion para conectar a la base de datos
+    function BD(){
+      var conexion = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: '1',
+        port: 3306,
+        database: 'ranking'
+      });
+      return conexion;
+    }
+    describe("Prueba de test",function(){
+      it("Login",function(done){
+
+        var bd=BD();
+
+        bd.query("SELECT DNI,nombre FROM USUARIOS WHERE DNI=111 AND clave=111",function(error,resultado,fila){
+          console.log(resultado.length);
+          assert.ok(!error,"Error en el select de usuarios");
+          assert.notEqual(resultado.length,0,"El usuario introducido no es correcto");
+          bd.end(done);
+        });
+
+      });
+    });
+
+He probado el test con un usuario que estaba y con otro que no.
+
+![ejer7](http://i1356.photobucket.com/albums/q726/Makelele_Junior/ejer6_zpsvrfjdkqd.png)
+
 
 #### Ejercicio 8
 ##### Haced los dos primeros pasos antes de pasar al tercero.
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/ejer8_zpsegtanrfy.png)
