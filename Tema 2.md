@@ -69,7 +69,8 @@ Funciona en todas ellas a la perfección.
         "body-parser": "~1.0.0",
         "debug": "~0.7.4",
         "jade": "~1.3.0",
-        "mysql": "~2.9.0"
+        "mysql": "~2.9.0",
+        "express-session": "^1.14.1"
       }
     }
 
@@ -121,7 +122,7 @@ Tendremos una carpeta __docs/__ con toda la documentación.
           res.redirect(session.pagina);
         });
 
-});
+    });
 
 
 #### Ejercicio 7
@@ -162,4 +163,4 @@ He probado el test con un usuario que estaba y con otro que no.
 
 #### Ejercicio 8
 ##### Haced los dos primeros pasos antes de pasar al tercero.
-![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/ejer8_zpsegtanrfy.png)
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/ejer8_zpsxgc7iruo.png)
