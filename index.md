@@ -5,7 +5,7 @@ layout: index
 
 ## Tema 1
 
-[Tema 1](https://github.com/makelele29/Ejercicios-IV/blob/gh-pages/Tema%201.md)
+[Tema 1](https://github.com/makelele29/Ejercicios-IV/blob/gh-pages/Ejercicios/Tema%201.md)
 
 ## Tema 2
 
