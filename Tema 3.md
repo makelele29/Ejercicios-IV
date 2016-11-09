@@ -29,14 +29,27 @@ Solo nos falta registrarnos y tendremos nuestra web en WordPress.
 
 ##### Realizar una app en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.
 
+He creado una aplicación como la del ejemplo sobre las apuestas y guardo los resultados en mongodb.
+
+[Repositorio del ejercicio 3](https://github.com/makelele29/heroku-porras)
+
+Aquí un ejemplo en la consola:
+
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-11-09%2017-53-25_zpsqrmvmlxx.png)
 
 #### Ejercicio 4
 
 ##### Crear pruebas para las diferentes rutas de la aplicación.
 
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-11-09%2018-22-19_zpsxicndeop.png)
+
 #### Ejercicio 5
 
 ##### Instalar y echar a andar tu primera aplicación en Heroku.
+
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-11-09%2018-44-02_zps8xgn8ryj.png)
+
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-11-09%2019-33-19_zpsi6mzagmq.png)
 
 #### Ejercicio 6
 
