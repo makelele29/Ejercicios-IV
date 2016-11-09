@@ -53,6 +53,10 @@ Aquí un ejemplo en la consola:
 
 #### Ejercicio 6
 
+He añadido el archivo  travis y le he puesto a heroku que hasta que no pase el CI no se suban los archivos.
+
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-11-09%2020-00-40_zpsisc2fmsn.png)
+
 ##### Usar como base la aplicación de ejemplo de heroku y combinarla con la aplicación en node que se ha creado anteriormente. Probarla de forma local con foreman. Al final de cada modificación, los tests tendrán que funcionar correctamente; cuando se pasen los tests, se puede volver a desplegar en heroku.
 
 #### Ejercicio 7
