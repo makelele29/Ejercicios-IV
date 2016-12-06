@@ -57,27 +57,80 @@ Para visualizalo : http://localhost:5000/home
 
 #### Ejercicio 5
 
-##### Instalar y echar a andar tu primera aplicación en Heroku.
-
-![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-11-09%2018-44-02_zps8xgn8ryj.png)
-
-![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-11-09%2019-33-19_zpsi6mzagmq.png)
+##### Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.
 
 
 
 
 #### Ejercicio 6
 
-He añadido el archivo  travis y le he puesto a heroku que hasta que no pase el CI no se suban los archivos.
+##### Instalar docker.
 
-![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-11-09%2020-00-40_zpsisc2fmsn.png)
+Instalamos docker en nuestro sistema
 
-##### Usar como base la aplicación de ejemplo de heroku y combinarla con la aplicación en node que se ha creado anteriormente. Probarla de forma local con foreman. Al final de cada modificación, los tests tendrán que funcionar correctamente; cuando se pasen los tests, se puede volver a desplegar en heroku.
+    sudo apt-get install docker.io
+
+![prueba](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-12-06%2001-09-20_zpsu761b5mp.png)
 
 #### Ejercicio 7
 
-##### Haz alguna modificación a tu aplicación en node.js para Heroku, sin olvidar añadir los tests para la nueva funcionalidad, y configura el despliegue automático a Heroku usando Snap CI o alguno de los otros servicios, como Codeship, mencionados en StackOverflow
+##### Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
 
+Yo he instalado y ejecutado la imagen al mismo tiempo.
+
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-12-06%2011-53-31_zpsqnwlkzcv.png)
+
+##### Buscar e instalar una imagen que incluya MongoDB.
+
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-12-06%2012-09-12_zpscsjj9i6m.png)
 #### Ejercicio 8
 
-##### Preparar la aplicación con la que se ha venido trabajando hasta este momento para ejecutarse en un PaaS, el que se haya elegido.
+##### Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.
+
+Procedemos a crearnos un usuario en ubuntu, darle permisos de administrador y hacer login.
+
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-12-06%2012-22-59_zpsnpto7vz3.png)
+
+Para instalar nginx:
+
+    sudo apt-get install nginx
+
+Una vez instalado lo echamos a andar y listo.
+
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-12-06%2013-03-38_zpsmoeto8tg.png)
+
+
+#### Ejercicio 9
+
+##### Crear a partir del contenedor anterior una imagen persistente con commit.
+
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-12-06%2013-08-28_zpswkvxrwlz.png)
+
+#### Ejercicio 10
+
+##### Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.
+
+Ejecutamos los siguientes comandos:
+
+```shell
+
+sudo docker run -i -t ubuntu /bin/bash
+
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+
+apt update
+
+apt install -y mongodb-org
+
+apt install -y build-essential curl
+
+curl -sL https://deb.nodesource.com/setup_7.x
+
+apt install -y nodejs
+
+```
+
+Luego guardamos la imagen
+
+![](http://i1356.photobucket.com/albums/q726/Makelele_Junior/Captura%20de%20pantalla%20de%202016-12-06%2013-51-31_zpsjyqhmw4q.png)
