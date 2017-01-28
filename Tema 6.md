@@ -18,6 +18,8 @@ Lo instalamos con el siguiente comando:
 
 ##### Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.
 
+El despliegue lo he realizado con la aplicación de IV y esta explicado [aqui](https://makelele29.github.io/Geoke-Web/#ansible)
+
 #### Ejercicio 4
 
 ##### Instalar una máquina virtual Debian usando Vagrant y conectar con ella.
